@@ -17,6 +17,7 @@ defmodule PparksWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/parks", ParkController
   end
 
   # Other scopes may use custom stacks.
