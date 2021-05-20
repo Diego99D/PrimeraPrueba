@@ -6,7 +6,7 @@ defmodule Pparks.Accounts do
     alias Pparks.Accounts.Park
 
     def list_park do
-        repo.all(Park)
+        Repo.all(Park)
     end
 
     def get_park!(id), do: Repo.get!(Park, id)
