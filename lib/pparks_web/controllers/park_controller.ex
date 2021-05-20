@@ -1,4 +1,4 @@
-defmodule Pparksweb.ParkController do
+defmodule PparksWeb.ParkController do
     use PparksWeb, :controller
 
     alias Pparks.Accounts

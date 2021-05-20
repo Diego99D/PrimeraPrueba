@@ -13,7 +13,7 @@
         </tr>
     </thead>
     <tbody>
-        <%= for park <- @Parks do %>
+        <%= for park <- @parks do %>
         <tr>
             <td><%= park.name %></td>
             <td><%= park.address %></td>

@@ -5,7 +5,7 @@ defmodule Pparks.Accounts do
 
     alias Pparks.Accounts.Park
 
-    def list_park do
+    def list_parks do
         Repo.all(Park)
     end
 
@@ -20,7 +20,7 @@ defmodule Pparks.Accounts do
     def update_park(%Park{} = park, attrs) do
         park
         |> Park.changeset(attrs)
-        |> Repo.update
+        |> Repo.update()
     end
 
     def delete_park(%Park{} = park) do

@@ -12,9 +12,10 @@ defmodule Pparks.Accounts.Park do
         timestamps()
     end
 
+    @doc false
     def changeset(park, attrs) do
         park
         |> cast(attrs, [:name, :address, :description, :size, :status])
-        |> validate_required ([:name, :address, :descripton, :size, :status])
+        |> validate_required([:name, :address, :description, :size, :status])
     end
 end
